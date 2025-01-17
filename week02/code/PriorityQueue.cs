@@ -26,7 +26,8 @@
         var highPriorityIndex = 0;
         for (int index = 1; index < _queue.Count - 1; index++)
         {
-            if (_queue[index].Priority >= _queue[highPriorityIndex].Priority)
+            // FIX #3: Change the comparison to > so that the first item with the highest priority is removed.
+            if (_queue[index].Priority > _queue[highPriorityIndex].Priority)
                 highPriorityIndex = index;
         }
 
