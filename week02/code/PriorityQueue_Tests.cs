@@ -40,7 +40,7 @@ public class PriorityQueueTests
     [TestMethod]
     // Scenario: Check if the queue is empty.
     // Expected Result: An InvalidOperationException is thrown.
-    // Defect(s) Found: 
+    // Defect(s) Found: No defects found.
     public void TestPriorityQueue_3()
     {
         var priorityQueue = new PriorityQueue();
